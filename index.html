@@ -5,15 +5,75 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lavanderia LaveUp · Autosserviço 24h na Aricanduva</title>
 <meta name="description" content="Lavanderia autosserviço 24 horas na Av. Aricanduva, 5965, dentro do posto BR. Lave ou seque por R$16,99 o ciclo, com sabão OMO e amaciante Comfort inclusos. Seg a qua R$14,99.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://lavanderialaveup.com.br/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Lavanderia LaveUp">
+<meta property="og:url" content="https://lavanderialaveup.com.br/">
 <meta property="og:title" content="Lavanderia LaveUp · 24h na Aricanduva">
 <meta property="og:description" content="Lave ou seque em aprox. 35 min. Sabão e amaciante inclusos, Wi-Fi e ambiente climatizado.">
-<meta property="og:image" content="img/maquinas.jpg">
+<meta property="og:image" content="https://lavanderialaveup.com.br/img/maquinas.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="1200">
+<meta property="og:image:alt" content="Lavadoras e secadoras da LaveUp com TV acima">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0a2a5e">
 <link rel="icon" href="img/logo.png">
+<link rel="apple-touch-icon" href="img/logo.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Laundromat",
+  "@id": "https://lavanderialaveup.com.br/#lavanderia",
+  "name": "Lavanderia LaveUp",
+  "description": "Lavanderia autosserviço 24 horas na Av. Aricanduva, dentro do posto BR. Lave ou seque em aprox. 35 min, com sabão OMO e amaciante Comfort inclusos.",
+  "url": "https://lavanderialaveup.com.br/",
+  "logo": "https://lavanderialaveup.com.br/img/logo.png",
+  "image": [
+    "https://lavanderialaveup.com.br/img/maquinas.jpg",
+    "https://lavanderialaveup.com.br/img/carregando.jpg"
+  ],
+  "telephone": "+55-11-99318-5690",
+  "priceRange": "R$14,99 a R$16,99 por ciclo",
+  "currenciesAccepted": "BRL",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Aricanduva, 5965 (dentro do posto BR)",
+    "addressLocality": "São Paulo",
+    "addressRegion": "SP",
+    "postalCode": "03527-000",
+    "addressCountry": "BR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -23.5722,
+    "longitude": -46.5038
+  },
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=Lavanderia+LaveUp+Av.+Aricanduva+5965+S%C3%A3o+Paulo",
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "00:00",
+    "closes": "23:59"
+  }],
+  "amenityFeature": [
+    {"@type": "LocationFeatureSpecification", "name": "Wi-Fi grátis", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Ambiente climatizado", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "TV", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Sabão e amaciante inclusos", "value": true}
+  ],
+  "makesOffer": [
+    {"@type": "Offer", "name": "Ciclo de lavagem ou secagem (qui a dom)", "price": "16.99", "priceCurrency": "BRL"},
+    {"@type": "Offer", "name": "Ciclo de lavagem ou secagem (seg a qua, promoção)", "price": "14.99", "priceCurrency": "BRL"}
+  ],
+  "sameAs": ["https://www.instagram.com/lavanderia.laveup/"]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=1">
+<link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
 
@@ -37,8 +97,7 @@
   <canvas class="bubbles" id="bubbles" aria-hidden="true"></canvas>
   <div class="hero-in">
     <div class="hero-copy">
-      <p class="eyebrow">Lavanderia autosserviço · Aricanduva</p>
-      <h1 class="hero-h">Roupa limpa<br>na hora que<br><em>você quiser.</em></h1>
+      <h1 class="hero-h"><span class="eyebrow">Lavanderia autosserviço 24h · Aricanduva</span>Roupa limpa<br>na hora que<br><em>você quiser.</em></h1>
       <p class="hero-sub">24 horas, tudo automatizado: só colocar na máquina e aguardar. Sabão OMO e amaciante Comfort já inclusos.</p>
       <div class="hero-price" id="heroPrice">
         <span class="hp-tag" id="hpTag">hoje</span>

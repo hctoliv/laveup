@@ -1,0 +1,10 @@
+# www -> dominio sem www (301), e http -> https
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.lavanderialaveup\.com\.br$ [NC]
+RewriteRule ^(.*)$ https://lavanderialaveup.com.br/$1 [R=301,L]
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# /index.html -> / (evita URL duplicada)
+RewriteCond %{THE_REQUEST} \s/index\.html[\s?] [NC]
+RewriteRule ^index\.html$ https://lavanderialaveup.com.br/ [R=301,L]
